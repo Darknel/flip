@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="product__section">
+			<div
+				class="product-description j-product-description"
+				itemprop="description"
+			>
+				<div class="text">
+					<style type="text/css">
+						.big_img {
+							display: flex;
+							justify-content: center;
+						}
+						.big_img img {
+							max-width: 100%;
+							width: auto;
+						}
+						.default-section .caption {
+							font-size: 39px;
+							font-weight: 600;
+							letter-spacing: -0.1px;
+							line-height: 1.1;
+							max-width: 310px;
+						}
+						.default-section .colors {
+							font-size: 17px;
+							font-weight: 700;
+							letter-spacing: 1.1px;
+							text-transform: uppercase;
+						}
+						.default-section .transform-text {
+							font-size: 14px;
+							font-weight: 400;
+							left: 50px;
+							letter-spacing: 1px;
+							line-height: 1.3;
+							position: absolute;
+							text-transform: uppercase;
+							top: 5px;
+							transform: rotate(90deg);
+							transform-origin: 0 0;
+						}
+						.default-section,
+						.phone-colors img:nth-child(2) {
+							position: relative;
+						}
+						.default-section__link {
+							align-items: center;
+							background-color: #f3f4f6;
+							border-radius: 24px;
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							margin: 0 auto;
+							position: relative;
+							width: 295px;
+						}
+						.default-section__link img {
+							border-radius: 24px;
+						}
+						.default-section__text {
+							font-size: 18px;
+							line-height: 33px;
+							line-height: 1.55;
+						}
+						.default_item img {
+							height: 40px;
+							width: 40px;
+						}
+						.design .caption {
+							font-size: 39px;
+							letter-spacing: -0.02em;
+							line-height: 1.15;
+							margin-bottom: 50px;
+							margin-top: 17px;
+							max-width: 300px;
+						}
+						.design_span {
+							font-size: 18px;
+							font-weight: 600;
+							letter-spacing: 0.05em;
+							text-transform: uppercase;
+						}
+						.full_img {
+							margin: 0;
+							overflow: hidden;
+							padding: 0;
+							position: relative;
+						}
+						.full_img figcaption {
+							font-size: 52px;
+							font-weight: 600;
+							left: 50%;
+							position: absolute;
+							text-align: center;
+							top: 50%;
+							transform: translate(-50%, -50%);
+							width: 100%;
+							z-index: 2;
+						}
+						.full_img img {
+							height: auto;
+							max-width: 700px;
+							overflow: hidden;
+							width: 100%;
+						}
+						.full_img--left {
+							left: -8%;
+							overflow: hidden;
+							position: relative;
+						}
+						.full_img--margin img {
+							margin-left: -8px;
+							margin-right: -8px;
+							margin-top: -5px;
+						}
+						.full_img--right img {
+							overflow: hidden;
+							position: relative;
+							right: -8%;
+						}
+						.new {
+							padding: 100px 70px;
+						}
+						.new .caption {
+							font-size: 47px;
+							line-height: 57px;
+							max-width: 290px;
+						}
+						.new_list {
+							column-gap: 10px;
+							display: flex;
+							flex-flow: row wrap;
+							justify-content: center;
+							margin-top: 80px;
+							padding: 0;
+							row-gap: 20px;
+						}
+						.new_list a {
+							border: 2px solid #7f7f7f;
+							border-radius: 24px;
+							color: #000;
+							font-size: 15px;
+							font-weight: 600;
+							letter-spacing: 1.2px;
+							line-height: 25px;
+							padding: 6px 18px;
+							text-decoration: none;
+							text-transform: uppercase;
+						}
+						.new_list a:hover {
+							background-color: #000;
+							color: #fff;
+						}
+						.text .new_list li {
+							overflow: inherit;
+							position: relative;
+							padding-left: 0;
+							list-style-type: none;
+						}
+						.text .new_list li:before {
+							display: none;
+						}
+
+						.overflow-hidden-non {
+							overflow: initial;
+						}
+						.phone-colors {
+							height: 100%;
+							position: relative;
+						}
+						.phone-colors img {
+							animation-duration: 5s;
+							animation-iteration-count: infinite;
+							animation-name: phones;
+							max-width: 90%;
+							width: 75%;
+						}
+						.phone-colors img:nth-child(1) {
+							animation-delay: 3s;
+							left: 20%;
+							top: 10%;
+						}
+						.phone-colors img:nth-child(3) {
+							animation-delay: 0.5s;
+							left: -30%;
+							top: 10%;
+						}
+						.phone-colors img:nth-child(3),
+						.phone-colors img:nth-child(1) {
+							position: absolute;
+						}
+						.product-banner .caption {
+							margin: 150px 0;
+						}
+						.product-description {
+							font-family: sans-serif;
+							font-size: 16px;
+							position: relative;
+						}
+						.product-description .block-m {
+							margin-bottom: 60px;
+							margin-top: 60px;
+						}
+						.product-description .block-m-b {
+							margin-bottom: 60px;
+						}
+						.product-description .block-m-t {
+							margin-top: 60px;
+						}
+						.product-description .block-prl {
+							padding-left: 70px;
+							padding-right: 70px;
+						}
+						.product-description .caption {
+							font-size: 39px;
+							font-weight: 600;
+							letter-spacing: -0.1px;
+							line-height: 1.1;
+						}
+						.product-description .color-white {
+							color: #fff;
+						}
+						.product-description .product-banner {
+							align-items: center;
+							background: #f4f4f4;
+							display: flex;
+							flex-direction: column;
+						}
+						.small-text {
+							color: #575757;
+							font-size: 13px;
+							line-height: 1.4;
+						}
+						@keyframes phones {
+							0%,
+							100% {
+								top: 10%;
+							}
+							50% {
+								top: 50%;
+							}
+						}
+						.flip_img {
+							overflow: hidden;
+							position: relative;
+						}
+						.flip_img img {
+							height: 100%;
+							margin-left: -20%;
+							max-width: 700px;
+							overflow: hidden;
+							width: 100%;
+						}
+						.flip_img img:first-child {
+							left: 0;
+							position: absolute;
+							top: 0;
+							z-index: 2;
+						}
+						.flip_img img:last-child {
+							position: relative;
+						}
+						.img-animation-right img {
+							animation-delay: 0.4s;
+							animation-duration: 4s;
+							animation-iteration-count: infinite;
+							animation-name: phone-right;
+							position: relative;
+							right: 0;
+						}
+						.link-description {
+							align-items: center;
+							display: flex;
+							flex-direction: column;
+							padding-bottom: 20px;
+							text-align: center;
+						}
+						.link-description a {
+							color: #000;
+						}
+						.link-description a:hover {
+							text-decoration: none;
+						}
+						.link-description span:first-child {
+							font-size: 18px;
+							font-weight: 600;
+							line-height: 1.28;
+						}
+						@keyframes phone-right {
+							0%,
+							100% {
+								right: 0;
+							}
+							50% {
+								right: -20%;
+							}
+						}
+						.big_bg {
+							background-image: url(https://zhuk.ua/content/uploads/images/galaxy-z-flip3-5g_highlights_cam.jpg);
+							background-repeat: no-repeat;
+							background-size: 100% auto;
+							color: #000;
+						}
+						.big_bg > .design {
+							padding-top: 550px;
+						}
+						.big_bg figcaption {
+							column-gap: 35px;
+							display: flex;
+							font-size: 14px;
+							justify-content: center;
+							margin-bottom: 20px;
+							text-align: left;
+						}
+						.big_bg figure {
+							border-top-left-radius: 24px;
+							border-top-right-radius: 24px;
+							color: #000;
+							display: flex;
+							flex-direction: column;
+							padding: 5px;
+						}
+						.caption-col {
+							display: flex;
+							flex-direction: column;
+						}
+						.caption-col p {
+							font-size: 20px;
+						}
+						.spec {
+							align-items: center;
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							row-gap: 20px;
+						}
+						.spec .caption,
+						.spec_item img {
+							width: 100%;
+						}
+						.spec h3 {
+							font-size: 18px;
+							font-weight: 600;
+							max-width: 60%;
+						}
+						.spec p {
+							color: #575757;
+							font-size: 14px;
+							font-weight: 500;
+							line-height: 1.5;
+						}
+						.spec_item {
+							background-color: #f5f6f8;
+							border-radius: 24px;
+							max-width: 450px;
+							min-width: 300px;
+							width: 100%;
+						}
+						.spec_text {
+							margin-bottom: 100px;
+							padding: 30px 30px 0;
+						}
+						.spec_text span {
+							font-size: 12px;
+							font-weight: 500;
+							max-width: 40%;
+						}
+						.video_block {
+							display: flex;
+							justify-content: center;
+						}
+					</style>
+
+					<div class="product-banner">
+						<h1 class="caption">Galaxy Z Flip3 5G</h1>
+						<figure class="full_img">
+							<img
+								alt="Galaxy Z Flip3 5G"
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-flip3-5g_highlights_kv.jpg"
+							/>
+						</figure>
+					</div>
+					<section class="new block-prl">
+						<h2 class="caption">Краще стає ще кращим</h2>
+						<p class="default-section__text">
+							Він складається та чудово лягає в кишеню. Ховається в сумочку.
+							Втискується в найвужчі джинси. А потім розгортається в
+							повнорозмірний смартфон та згинається на зручний вам кут.
+							<br />
+							Звучить, немов телефон винайдено наново? Так воно і є. Ми
+							заявляємо це з впевненістю.
+						</p>
+						<ul class="new_list">
+							<li><a href="#design">дизайн</a></li>
+							<li><a href="#skills">можливості</a></li>
+							<li><a href="#capacity">витривалість</a></li>
+							<li><a href="#camera">камера</a></li>
+							<li><a href="#ecosystem">екосистема</a></li>
+						</ul>
+					</section>
+					<section class="design block-prl" id="design">
+						<p class="design_span">дизайн</p>
+						<h2 class="caption">Новий вигляд, який вразить усіх</h2>
+						<p class="small-text">
+							* Зовнішній дизайн може різнитися залежно від країни.
+						</p>
+					</section>
+					<figure class="big_img block-m">
+						<img
+							alt="Galaxy Z Flip3 5G"
+							src="https://zhuk.ua/content/uploads/images/screenshot%281%29.png"
+						/>
+					</figure>
+					<section class="default-section block-prl">
+						<span class="transform-text">КОЛЬОРИ </span>
+						<h2 class="caption">Явіть свої справжні кольори</h2>
+						<p class="default-section__text">
+							Любите яскравість або надаєте перевагу виразному чорному? Завдяки
+							неповторному дизайну Galaxy Z Flip3 5G у шляхетних тонах усі очі
+							дивитимуться вас. А який саме з цих вишуканих кольорів западе в
+							око вам?
+						</p>
+					</section>
+					<figure class="full_img block-m">
+						<img
+							alt="Galaxy Z Flip3 5G"
+							src="https://zhuk.ua/content/uploads/images/galaxy-z-flip3-5g_highlights_com.jpg"
+						/>
+					</figure>
+					<section class="default-section block-prl">
+						<span class="transform-text">КОМПАКТНИЙ РОЗМІР </span>
+						<h2 class="caption">Великі речі для маленьких кишень</h2>
+						<figure class="big_img block-m">
+							<img
+								alt="Galaxy Z Flip3 5G"
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-flip3-5g_highlights_23542352352354com.jpg"
+							/>
+						</figure>
+						<p class="default-section__text">
+							Цей смартфон з повнорозмірним екраном легко вміщається в невеличку
+							кишеню. У складеному стані Galaxy Z Flip3 5G має розмір всього 4,2
+							дюйма, і його зручно носити навіть в одязі, де не буває великих
+							кишень.
+						</p>
+					</section>
+					<section class="default-section block-prl block-m">
+						<span class="transform-text">ЗОВНІШНІЙ ЕКРАН </span>
+						<h2 class="caption">Маленький екран — великі справи</h2>
+						<p class="default-section__text">
+							Перевіряйте повідомлення, фотографуйте, слухайте музику та робіть
+							ще багато чого, і все це — не розкриваючи телефон. Зовнішній
+							1,9-дюймовий екран відображає сповіщення та дає змогу зручно
+							взаємодіяти з ними. Обирайте улюблені опції дисплея для спрощеного
+							доступу та встановлюйте для них власні стилі та кольори.
+						</p>
+					</section>
+					<section class="default-section block-prl">
+						<h2 class="caption">Сумісний із</h2>
+						<div class="default-section__link block-m">
+							<img
+								alt="Galaxy Z Flip3 5G"
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-flip3-5g_highlights_imm.jpg"
+							/>
+							<div class="link-description">
+								<span>Galaxy Buds2</span>
+								<span
+									><a
+										href="https://zhuk.ua/navushniki-samsung-galaxy-buds2-sm-r177nzkasek-black"
+										target="_blank"
+										>Перейти до <br />
+										Galaxy Buds2</a
+									></span
+								>
+							</div>
+						</div>
+					</section>
+					<figure class="video_block">
+						<video autoplay="true" loop="loop" muted="muted" preload="auto">
+							<source
+								src="https://images.samsung.com/ua/smartphones/galaxy-z-flip3-5g/videos/galaxy-z-flip3-5g_highlights_screen.webm"
+								type="video/webm"
+								style="width: 100%; height: 100%"
+							/>
+						</video>
+					</figure>
+					<section class="default-section block-prl block-m">
+						<span class="transform-text">ГОЛОВНИЙ ЕКРАН </span>
+						<h2 class="caption">А тепер головна принада</h2>
+						<p class="default-section__text">
+							Завдяки 6,7-дюймовому екрану Infinity Flex з частотою оновлення
+							120 Гц ви можете насолодитися максимальною плавністю скролінгу,
+							робити жести пальцями та перетягувати елементи. Він навіть здатен
+							оптимально підбирати частоту оновлення під вміст, що ви
+							переглядаєте. А завдяки застосуванню технології Dynamic AMOLED 2X
+							ви отримуєте найяскравіший та найплавніший екран із тих, що
+							коли-небудь встановлювалися в телефонах серії Galaxy Z.
+						</p>
+					</section>
+					<div class="big_bg">
+						<section class="design block-m block-prl" id="camera">
+							<p class="design_span">КАМЕРИ</p>
+							<h2 class="caption">Знімайте по-новому</h2>
+						</section>
+						<section class="default-section block-m block-prl">
+							<figure class="big_img">
+								<figcaption>
+									<div class="caption-col">
+										<p>10 МП</p>
+										<span>Фронтальна камера </span>
+									</div>
+								</figcaption>
+								<img
+									alt="Galaxy Z Flip3 5G"
+									src="https://zhuk.ua/content/uploads/images/galaxy-z-flip3-2354235345235423355.jpg"
+								/>
+							</figure>
+							<figure class="big_img">
+								<figcaption>
+									<div class="caption-col">
+										<p>12 МП</p>
+										<span>Ультраширококутна камера </span>
+									</div>
+									<div class="caption-col">
+										<p>12 МП</p>
+										<span>Ширококутна камера </span>
+									</div>
+								</figcaption>
+								<img
+									alt="Galaxy Z Flip3 5G"
+									src="https://zhuk.ua/content/uploads/images/galaxy-z-flip3-23452323543.jpg"
+								/>
+							</figure>
+						</section>
+					</div>
+					<section class="default-section block-prl">
+						<span class="transform-text">ШВИДКИЙ ЗНІМОК </span>
+						<h2 class="caption">Зовнішній екран допомагає робити селфі</h2>
+						<p class="default-section__text">
+							Ніколи розгорнути телефон? Знімайте селфі подвійною камерою на
+							верхній панелі, оглядаючи кадр на зовнішньому екрані. Аби зробити
+							знімок, просто натисніть кнопку гучності збоку.
+						</p>
+						<p class="small_text">
+							* Фото, зняте на Galaxy Z Flip3 5G, зі змодельованими з
+							ілюстраційною метою елементами. Реальний інтерфейс може бути
+							іншим.
+						</p>
+					</section>
+					<div class="full_img full_img--right block-m">
+						<img
+							alt="Galaxy Z Flip3 5G"
+							src="https://zhuk.ua/content/uploads/images/galaxy-z-flip3-5g_highlights_qui.jpg"
+						/>
+					</div>
+					<div class="full_img full_img--right block-m">
+						<img
+							alt="Galaxy Z Flip3 5G"
+							src="https://zhuk.ua/content/uploads/images/galaxy-z-flip3-5g_highlights_sel.jpg"
+						/>
+					</div>
+
+					<div class="flip_img block-m">
+						<img
+							alt="Galaxy Z Flip3 5G"
+							src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_highlights_imm.png"
+						/>
+						<img
+							alt="Galaxy Z Flip3 5G"
+							src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_highlights_imm.jpg"
+						/>
+					</div>
+					<section class="default-section block-prl block-m">
+						<p class="default-section__text">
+							Але дивовижні враження від перегляду не обмежуються екраном
+							Dynamic AMOLED 2X. Режим Dolby Atmos і стереодинаміки довершують
+							відчуття присутності.
+						</p>
+					</section>
+
+					<section class="default-section block-prl">
+						<span class="transform-text">функція multi view</span>
+						<h2 class="caption">Насолоджуйтеся вражаючим оглядом</h2>
+						<p class="default-section__text">
+							Інтерфейс One UI забезпечує інтуїтивну взаємодію на кшталт ПК для
+							опанування збільшеного простору. Ваші улюблені додатки тепер
+							оптимізовано для максимально ефективного використання площі екрана
+							Galaxy Z Fold3 5G, аби ви могли бачити якомога більше інформації
+							одночасно.
+						</p>
+						<p class="small-text">
+							* Конфігурацію екрана можна задати в налаштуваннях. Ця можливість
+							може залежати від використовуваних додатків.
+						</p>
+					</section>
+					<div class="full_img full_img--right block-m">
+						<img
+							alt="Galaxy Z Fold3 5G"
+							src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_highligh235423523523543ts_mul%281%29.jpg"
+						/>
+					</div>
+					<section class="default-section block-m block-prl">
+						<h2 class="caption">Важке видається легким</h2>
+						<figure class="full_img">
+							<img
+								alt="Galaxy Z Fold3 5G"
+								src="https://zhuk.ua/content/uploads/images/pen-s-fold.png"
+							/>
+						</figure>
+					</section>
+					<section class="default-section block-prl">
+						<span class="transform-text">s pen fold edition</span>
+						<h2 class="caption">Для ваших геніальних ідей</h2>
+						<p class="default-section__text">
+							Перший S Pen до складаного смартфона. Торкаючись ним скла, ви
+							насолоджуєтеся природною зручністю та точністю, яка пальцям навіть
+							не снилася. У режимі Flex він дозволяє дивитися відео, робити
+							відеодзвінки та багато іншого, не беручи телефон до рук. Ви навіть
+							можете у верхній частині розділеного навпіл екрана підтримувати
+							розмову, а в нижній – нотувати думки чи замальовувати ідеї.
+						</p>
+						<p class="small-text">
+							Не вдається запустити сторонній додаток у режимі Flex? Активуйте
+							Labs в Налаштуваннях та спостерігайте перетворення на екрані.9
+						</p>
+					</section>
+					<figure class="full_img block-m">
+						<img
+							alt="Galaxy Z Fold3 5G"
+							src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_highlights_mul%281%29.jpg"
+						/>
+					</figure>
+					<section class="default-section block-m block-prl">
+						<span class="transform-text">багатозадачність</span>
+						<h2 class="caption">Кілька речей одразу на раз-два-три</h2>
+						<figure class="big_img block-m">
+							<img
+								alt="Galaxy Z Fold3 5G"
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-3465346346346%281%29.jpg"
+							/>
+						</figure>
+						<p class="default-section__text">
+							Розподіліть великий екран між трьома додатками одразу, а потім
+							відкрийте ще п'ять у спливаючих вікнах. Тримайте групи програм на
+							бічній панелі та миттю відкривайте їх за необхідності, дивіться
+							відео, спілкуйтесь у чатах і робіть ще багато чого разом. Ваш
+							телефон відкриває можливості рівня ПК, а складається до розміру
+							долоні.
+						</p>
+						<p class="small-text">
+							* Зображення змодельовано з ілюстраційною метою. Реальний
+							інтерфейс може відрізнятися.
+						</p>
+						<p class="small-text">
+							* Зовнішній дизайн може різнитися залежно від країни.
+						</p>
+					</section>
+					<figure class="big_img block-m">
+						<img
+							alt="Galaxy Z Fold3 5G"
+							src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_highl32453252353ights_mul%281%29.jpg"
+						/>
+					</figure>
+					<section class="default-section block-prl">
+						<p class="default-section__text">
+							Він навіть запросто працює з вашими офісними програмами Microsoft
+							і буде чудовим помічником, аби ви могли спритніше управлятися з
+							завданнями.
+						</p>
+						<p class="small-text">
+							* Необхідна підписка Microsoft Office; продається окремо.
+						</p>
+						<p class="small-text">
+							Потрібно працювати з додатком, але він не підтримує
+							багатозадачність? Запустіть Labs, і ви зможете користуватися ним в
+							режимі розділеного екрана.
+						</p>
+					</section>
+					<section class="design block-m block-prl">
+						<h2 class="caption">
+							Більше екранів. <br />
+							Більше гри. <br />
+							Більше перемог.
+						</h2>
+						<figure class="big_img block-m">
+							<img
+								alt="Galaxy Z Fold3 5G"
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_h3124124124ighlights_120%281%29.jpg"
+							/>
+						</figure>
+					</section>
+					<section class="default-section block-prl">
+						<span class="transform-text">дисплей 120 ГЦ</span>
+						<h2 class="caption">Жоден кадр не проскоче</h2>
+						<p class="default-section__text">
+							Частота оновлення 120 Гц гарантує суперплавну динаміку зображення
+							в іграх, відео та скролінгу на обох екранах. Вона також забезпечує
+							чітке відтворення руху та швидку реакцію навіть у найстрімкіших
+							сценах, надаючи великих ігрових переваг. А 5 нм процесор здатен
+							підтримувати карколомну швидкість.
+						</p>
+						<p class="small-text">
+							* Запуск ігор у повноекранному режимі на головному екрані може
+							вимагати встановлення Labs на вашому пристрої Samsung Galaxy.
+							Певні програми можуть не підтримуватися Labs.
+						</p>
+						<figure class="big_img block-m">
+							<img
+								alt="Galaxy Z Fold3 5G"
+								src="https://zhuk.ua/content/uploads/images/screenshot23542352323523545.png"
+							/>
+						</figure>
+					</section>
+					<section class="default-section block-prl">
+						<span class="transform-text">програми для партнерів</span>
+						<h2 class="caption">Беріть потрібні додатки на великий екран</h2>
+						<p class="default-section__text">
+							Окрім уже встановлених у вашому Galaxy Z Fold3 5G додатків, є ще
+							багато доступних для завантаження програм від інших розробників,
+							які можуть стати вам у пригоді.
+						</p>
+					</section>
+					<section class="design block-m block-prl" id="capacity">
+						<p class="design_span">ВИТРИВАЛІСТЬ</p>
+						<h2 class="caption">Стільки майстерності в одному пристрої</h2>
+						<p class="small-text">
+							* Зовнішній дизайн може різнитися залежно від країни.
+						</p>
+					</section>
+					<figure class="full_img full_img--right block-m">
+						<img
+							alt="Galaxy Z Fold3 5G"
+							src="https://zhuk.ua/content/uploads/images/screenshot1243124124.png"
+						/>
+					</figure>
+					<section class="default-section block-prl">
+						<span class="transform-text">корпус</span>
+						<h2 class="caption">Згинається, та не ламається</h2>
+						<p class="default-section__text">
+							Розгортайте його впевненіше. Galaxy Z Fold3 5G побудовано з
+							тривких матеріалів – тож складайте, розгортайте та тицяйте в екран
+							без остраху.
+						</p>
+					</section>
+					<figure class="full_img full_img--right img-animation-right block-m">
+						<img
+							alt="Galaxy Z Fold3 5G"
+							src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_highlights_dur.jpg"
+						/>
+					</figure>
+					<section class="default-section block-m block-prl">
+						<h2 class="caption">
+							Найміцніший корпус, що ми коли-небудь встановлювали
+						</h2>
+						<p class="default-section__text">
+							Міцність, що забезпечує спокійне використання. В основі цього
+							надзвичайного телефона використано надміцну, проте легку рамку з
+							Armor Aluminum, вона на 10% довговічніша, аби захищати внутрішні
+							компоненти шарніра, як панцир.
+						</p>
+					</section>
+					<section class="default-section block-m block-prl">
+						<h2 class="caption">Об нього трощаться стереотипи</h2>
+						<p class="default-section__text">
+							Це скло найміцніше з тих, що коли-небудь використовувалися в
+							моделях Galaxy Z. Зовнішній екран та задня панель Galaxy Z Fold3
+							5G стійкі до ударів завдяки склу Corning® Gorilla® Glass Victus™,
+							яке здатне витримувати падіння з висоти до двох метрів, та
+							вчетверо стійкіше до подряпин за алюмосилікатні аналоги.
+						</p>
+						<p class="small-text">
+							* Зовнішній дизайн може різнитися залежно від країни.
+						</p>
+					</section>
+					<figure class="full_img block-m">
+						<img
+							alt="Galaxy Z Fold3 5G"
+							src="https://zhuk.ua/content/uploads/images/screensho3425232353543t.png"
+						/>
+					</figure>
+					<section class="default-section block-m block-prl">
+						<h2 class="caption">Ідеальна гнучкість – скільки не складай</h2>
+						<p class="default-section__text">
+							Головний екран виготовлено з ультратонкого скла Samsung — це
+							найбільший стрибок у наших технологіях гнучких дисплеїв. Завдяки
+							зміні у структурі та захисній плівці, він став на 80% міцнішим,
+							ніж раніше.
+						</p>
+						<p class="small-text">
+							* Зовнішній дизайн може різнитися залежно від країни.
+						</p>
+					</section>
+					<section class="default-section block-m block-prl">
+						<h2 class="caption">Samsung Care+</h2>
+						<p class="default-section__text">
+							Samsung Care+, турботи мінус. Реєструйтеся зараз. Захистіться від
+							прикрих несподіванок.
+						</p>
+					</section>
+
+					<figure class="full_img block-m">
+						<img
+							alt="Galaxy Z Fold3 5G"
+							src="https://zhuk.ua/content/uploads/images/3244143412412341241234.jpg"
+						/>
+					</figure>
+					<section class="default-section block-prl">
+						<span class="transform-text">РЕЖИМ CAPTURE VIEW </span>
+						<h2 class="caption">Огляд кадрів до і після – разом</h2>
+						<p class="default-section__text">
+							Перевіряйте щойно зняте, не заходячи в галерею. Перегніть екран,
+							щоб увімкнути режим Flex, або активуйте Capture Mode у додатку
+							Камера, щоб увійти в режим розділеного екрана.
+						</p>
+					</section>
+					<section class="default-section block-prl">
+						<h2 class="caption">Знімайте епічні фото</h2>
+						<div class="default_item block-m">
+							<img
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_highlights_pho.png"
+								alt="Galaxy Z Fold3 5G"
+							/>
+							<h3>Селфі</h3>
+							<p>
+								Робіть вражаючі селфі основною камерою та камерою на зовнішній
+								панелі.
+							</p>
+						</div>
+						<div class="default_item block-m">
+							<img
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-523543423543g_highlights_pho.png"
+								alt="Galaxy Z Fold3 5G"
+							/>
+							<h3>Режим Портрет</h3>
+							<p>
+								Перетворюйте знімки на художні полотна. Коригуйте глибину
+								різкості та освітленність в один дотик за допомогою основної
+								камери.
+							</p>
+						</div>
+						<div class="default_item block-m">
+							<img
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-543235243523543-5g_highlights_pho.png"
+								alt="Galaxy Z Fold3 5G"
+							/>
+							<h3>Режим Ніч</h3>
+							<p>
+								Штучний інтелект допомагає отримувати яскраві та чіткі нічні
+								знімки, а режим Flex дозволяє стабілізувати основну камеру без
+								додаткового обладнання.2
+							</p>
+						</div>
+						<div class="default_item block-m">
+							<img
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_highlights_pho-1.png"
+								alt="Galaxy Z Fold3 5G"
+							/>
+							<h3>Нічний Гіперлапс</h3>
+							<p>
+								Шоу нічних вогнів у вашому виконанні. Кадри з довгою
+								експозицією, зняті основною чи зовнішьою камерою, складаються в
+								феєричні таймлапс-ролики з ефектними світловими доріжками.
+							</p>
+						</div>
+						<div class="default_item block-m">
+							<img
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_highlights_pho-123453252354.png"
+								alt="Galaxy Z Fold3 5G"
+							/>
+							<h3>Режисерський режим</h3>
+							<p>
+								Фільмуйте сцени в різних ракурсах різними камерами – зокрема
+								основною та зовнішньою селфі-камерою – одночасно.17
+							</p>
+						</div>
+					</section>
+					<figure class="big_img block-m" id="ecosystem">
+						<img
+							alt="Galaxy Z Fold3 5G"
+							src="https://zhuk.ua/content/uploads/images/screenshot314124124124124.png"
+						/>
+					</figure>
+					<section class="default-section block-m block-prl">
+						<p class="small-text">
+							* Galaxy Z Flip3 5G, Galaxy Buds2 та Galaxy Watch4 продаються
+							окремо.
+						</p>
+						<p class="small-text">
+							* Зовнішній дизайн може різнитися в залежності від країни.
+						</p>
+					</section>
+					<section class="design block-m block-prl">
+						<p class="design_span">АКСЕСУАРИ</p>
+						<h2 class="caption">Це лише початок!</h2>
+					</section>
+					<figure class="full_img block-m">
+						<img
+							alt="Galaxy Z Fold3 5G"
+							src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_highligh34535ts_acc.jpg"
+						/>
+					</figure>
+					<section class="design block-m block-prl">
+						<p class="small-text">
+							* Зображення змодельовано з ілюстраційною метою.
+						</p>
+					</section>
+					<section class="spec block-prl">
+						<h2 class="caption">Відкривайте ще більше переваг</h2>
+						<div class="spec_item">
+							<div class="spec_text">
+								<span>РОЗУМНА ПОДВІЙНА БАТАРЕЯ </span>
+								<h3>Заряд на весь день. І на всю ніч.</h3>
+								<p>
+									Батарея ємністю 4400 мА∙год (типове значення) регулює витрату
+									енергії так, аби її вистачило на всю добу.19,20 А коли запас
+									вичерпано, його можна швидко відновити за допомогою зарядного
+									адаптера потужністю 25 Вт або бездротової станції швидкого
+									заряджання.21
+								</p>
+							</div>
+							<img
+								alt="Galaxy Z Fold3 5G"
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_high1234124lights_ess.jpg"
+							/>
+						</div>
+						<div class="spec_item">
+							<div class="spec_text">
+								<span>ПАМ'ЯТЬ </span>
+								<h3>Видалення файлів відходить в минуле</h3>
+								<p>
+									Залишайте свої фото- та відеошедеври в телефоні. Завдяки
+									вбудованій пам’яті 512 ГБ місця на цьому Samsung Galaxy є
+									вдосталь.
+								</p>
+								<p>
+									Надійне сховище для вашого цифрового життя. Зберігайте в
+									безпеці резервні копії вашої галереї та файлів на OneDrive з
+									вашого Samsung Galaxy та майте доступ до них з будь-якого зі
+									своїх пристроїв.
+								</p>
+							</div>
+							<img
+								alt="Galaxy Z Fold3 5G"
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_h2341432412ighlights_ess.jpg"
+							/>
+						</div>
+						<div class="spec_item">
+							<div class="spec_text">
+								<span>SAMSUNG KNOX </span>
+								<h3>Оксамитова огорожа в цифровій формі</h3>
+								<p>
+									Захисний бар’єр Samsung Knox, інтегрований в апаратні та
+									програмні засоби вашого телефона, надійно охороняє вашу
+									приватність.
+								</p>
+							</div>
+							<img
+								alt="Galaxy Z Fold3 5G"
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_highl2341432ights_ess.jpg"
+							/>
+						</div>
+						<div class="spec_item">
+							<div class="spec_text">
+								<span>ФЛАГМАНСЬКА ШВИДКІСТЬ </span>
+								<h3>Найспритніший серед Galaxy Z процесор</h3>
+								<p>
+									Оновленний процесор 5 нм та 12 ГБ оперативної пам'яті в Galaxy
+									Z Flip3 5G здатні забезпечити необхідну швидкість у ваших
+									улюблених іграх.
+								</p>
+							</div>
+							<img
+								alt="Galaxy Z Fold3 5G"
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_hifhffhfghlights_ess.jpg"
+							/>
+						</div>
+						<div class="spec_item">
+							<div class="spec_text">
+								<span>РОЗПІЗНАВАННЯ ОБЛИЧЧЯ </span>
+								<h3>Ви не бачите її, а вона вас бачить</h3>
+								<p>
+									Коли телефон розгорнуто, його можна легко розблокувати з
+									головного екрана. Схована під поверхнею дисплея камера надійно
+									розпізнає обличчя, тому дозволить зробити це тільки вам.
+								</p>
+							</div>
+							<img
+								alt="Galaxy Z Fold3 5G"
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_3456434highlights_ess.jpg"
+							/>
+						</div>
+						<div class="spec_item">
+							<div class="spec_text">
+								<span>СКАНЕР ВІДБИТКА ПАЛЬЦЯ ЗБОКУ </span>
+								<h3>Безпека на кінчику пальця</h3>
+								<p>
+									Розблоковуйте телефон, навіть коли ви в масці. Складений він
+									чи розкладений, бічне розташування сканера відбитка пальця
+									забезпечує легкий доступ до нього та безпечне розблоковування
+									в один дотик.
+								</p>
+							</div>
+							<img
+								alt="Galaxy Z Fold3 5G"
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_highli345643634634ghts_ess.jpg"
+							/>
+						</div>
+						<div class="spec_item">
+							<div class="spec_text">
+								<span>SIM </span>
+								<h3>SIM-карти без тяганини</h3>
+								<p>
+									Подвійте свій комунікаційний простір, тримаючи робочий та
+									домашній номери в одному телефоні. Цей пристрій дозволяє
+									використовувати як фізичні SIM-карти, так і вбудовані
+									електронні eSIM.
+								</p>
+								<p>*Зовнішній дизайн може різнитися залежно від країни.</p>
+							</div>
+							<img
+								alt="Galaxy Z Fold3 5G"
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_highl2345235235ights_ess.jpg"
+							/>
+						</div>
+						<div class="spec_item">
+							<div class="spec_text">
+								<span>LABS </span>
+								<h3>Програми набувають гнучкості</h3>
+								<p>
+									Інтерфейс One UI вміє за вашим бажанням оптимізовувати додатки
+									для роботи на складаному дисплеї, і ви самі обираєте ідеальні
+									для перегляду пропорції екрана, навіть у багатозадачному
+									режимі.
+								</p>
+							</div>
+							<img
+								alt="Galaxy Z Fold3 5G"
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_highlig23452353hts_ess.jpg"
+							/>
+						</div>
+						<div class="spec_item">
+							<div class="spec_text">
+								<span>ПАНЕЛЬ ЗАВДАНЬ </span>
+								<h3>Тримайте додатки побіч</h3>
+								<p>
+									Зручно запускайте програми в режимі розділеного екрана завдяки
+									панелі завдань, закріпленій збоку на головному екрані. Щоб
+									відкрити додаток, просто перетягніть його на потрібне місце.
+								</p>
+							</div>
+							<img
+								alt="Galaxy Z Fold3 5G"
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_23452353highlights_ess.jpg"
+							/>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
