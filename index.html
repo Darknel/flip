@@ -17,17 +17,16 @@
 						.big_img {
 							display: flex;
 							justify-content: center;
+							position: relative;
 						}
 						.big_img img {
-							max-width: 100%;
+							max-width: 80%;
 							width: auto;
 						}
 						.default-section .caption {
-							font-size: 39px;
 							font-weight: 600;
 							letter-spacing: -0.1px;
 							line-height: 1.1;
-							max-width: 310px;
 						}
 						.default-section .colors {
 							font-size: 17px;
@@ -66,7 +65,7 @@
 							border-radius: 24px;
 						}
 						.default-section__text {
-							font-size: 18px;
+							font-size: 15px;
 							line-height: 33px;
 							line-height: 1.55;
 						}
@@ -75,15 +74,13 @@
 							width: 40px;
 						}
 						.design .caption {
-							font-size: 39px;
 							letter-spacing: -0.02em;
 							line-height: 1.15;
 							margin-bottom: 50px;
 							margin-top: 17px;
-							max-width: 300px;
 						}
 						.design_span {
-							font-size: 18px;
+							font-size: 15px;
 							font-weight: 600;
 							letter-spacing: 0.05em;
 							text-transform: uppercase;
@@ -127,12 +124,10 @@
 							right: -8%;
 						}
 						.new {
-							padding: 100px 70px;
+							margin: 60px 0;
 						}
 						.new .caption {
-							font-size: 47px;
 							line-height: 57px;
-							max-width: 290px;
 						}
 						.new_list {
 							column-gap: 10px;
@@ -204,6 +199,7 @@
 							font-family: sans-serif;
 							font-size: 16px;
 							position: relative;
+							max-width: 700px;
 						}
 						.product-description .block-m {
 							margin-bottom: 60px;
@@ -220,7 +216,7 @@
 							padding-right: 70px;
 						}
 						.product-description .caption {
-							font-size: 39px;
+							font-size: 23px;
 							font-weight: 600;
 							letter-spacing: -0.1px;
 							line-height: 1.1;
@@ -234,7 +230,7 @@
 							display: flex;
 							flex-direction: column;
 						}
-						.small-text {
+						.small_text {
 							color: #575757;
 							font-size: 13px;
 							line-height: 1.4;
@@ -310,15 +306,22 @@
 							color: #000;
 						}
 						.big_bg > .design {
-							padding-top: 550px;
+							padding-top: 400px;
 						}
+
 						.big_bg figcaption {
 							column-gap: 35px;
 							display: flex;
+							flex-direction: column;
 							font-size: 14px;
 							justify-content: center;
 							margin-bottom: 20px;
 							text-align: left;
+							position: absolute;
+						}
+						.big_bg .default-section figure:first-child figcaption {
+							right: 20%;
+							text-align: right;
 						}
 						.big_bg figure {
 							border-top-left-radius: 24px;
@@ -327,10 +330,12 @@
 							display: flex;
 							flex-direction: column;
 							padding: 5px;
+							position: relative;
 						}
 						.caption-col {
 							display: flex;
 							flex-direction: column;
+							max-width: 150px;
 						}
 						.caption-col p {
 							font-size: 20px;
@@ -376,6 +381,27 @@
 						.video_block {
 							display: flex;
 							justify-content: center;
+						}
+						.bg_video {
+							background-image: url(https://zhuk.ua/content/uploads/images/galaxy-z-flip3-5g_highlights_nig.jpg);
+							background-repeat: no-repeat;
+							background-size: 100% 100%;
+							color: #fff;
+							padding: 40px 0 200px 0;
+							position: relative;
+							min-height: 300px;
+						}
+						.bg_video video {
+							position: absolute;
+							top: 10px;
+						}
+						.bg_video figure {
+							position: absolute;
+							bottom: -60px;
+							margin: 0;
+						}
+						.bg_video img {
+							width: 50%;
 						}
 					</style>
 
@@ -554,29 +580,105 @@
 							іншим.
 						</p>
 					</section>
-					<div class="full_img full_img--right block-m">
+					<div class="big_img block-m">
 						<img
 							alt="Galaxy Z Flip3 5G"
 							src="https://zhuk.ua/content/uploads/images/galaxy-z-flip3-5g_highlights_qui.jpg"
 						/>
 					</div>
-					<div class="full_img full_img--right block-m">
+					<div class="full_img block-m">
 						<img
 							alt="Galaxy Z Flip3 5G"
 							src="https://zhuk.ua/content/uploads/images/galaxy-z-flip3-5g_highlights_sel.jpg"
 						/>
 					</div>
+					<section class="default-section block-prl">
+						<span class="transform-text">КОМПАКТНИЙ РОЗМІР </span>
+						<h2 class="caption">Великі речі для маленьких кишень</h2>
+					</section>
+					<figure class="big_img block-m">
+						<img
+							alt="Galaxy Z Flip3 5G"
+							src="https://zhuk.ua/content/uploads/images/galaxy-z-flip3-5g_highlights_sel3452352352352354.jpg"
+						/>
+					</figure>
+					<section class="default-section block-prl">
+						<p class="default-section__text">
+							Цей смартфон з повнорозмірним екраном легко вміщається в невеличку
+							кишеню. У складеному стані Galaxy Z Flip3 5G має розмір всього 4,2
+							дюйма, і його зручно носити навіть в одязі, де не буває великих
+							кишень.
+						</p>
+						<p class="small_text">* Зображення змодельовано.</p>
+					</section>
 
-					<div class="flip_img block-m">
-						<img
-							alt="Galaxy Z Flip3 5G"
-							src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_highlights_imm.png"
-						/>
-						<img
-							alt="Galaxy Z Flip3 5G"
-							src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_highlights_imm.jpg"
-						/>
+					<div class="bg_video block-m">
+						<section class="default-section block-prl">
+							<span class="transform-text">НІЧНИЙ ГІПЕРЛАПС </span>
+							<h2 class="caption">На позицію, наведення, пуск!</h2>
+							<p class="default-section__text">
+								Якщо ви збираєтеся застосовувати ворушіння камери як творчий
+								прийом, скористайтеся режимом Flex замість штатива, встановивши
+								напівскладений Galaxy Z Flip3 5G на рівну поверхню. Отримайте
+								чудовий результат з першого ж дубля.1
+							</p>
+						</section>
+						<figure class="big_img">
+							<video autoplay="true" loop="loop" muted="muted" preload="auto" width="100%" height="70%" src="https://images.samsung.com/ua/smartphones/galaxy-z-flip3-5g/videos/galaxy-z-flip3-5g_highlights_night.mp4" type="video/mp4">
+							
+							
+							</video>
+							<img
+								alt="Galaxy Z Flip3 5G"
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-flip3-5g_highlights_nig.png"
+							/>
+						</figure>
 					</div>
+					<section class="design block-prl block-m" id="design">
+						<p class="design_span">ДОДАТКОВІ ФУНКЦІЇ КАМЕРИ
+						</p>
+						<h2 class="caption">Відкрийте для себе нові можливості зйомки
+						</h2>
+						<figure class="big_img block-m">
+							<img
+								alt="Galaxy Z Flip3 5G"
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-flip3-5g_highlights_ess.jpg"
+							/>
+						</figure>
+					</section>
+					<section class="default-section block-prl">
+						<h2 class="caption">Знімайте епічні фото</h2>
+						<div class="default_item block-m">
+							<img
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-5g_highlights_pho.png"
+								alt="Galaxy Z Fold3 5G"
+							/>
+							<h3>Попередній перегляд на зовнішньому екрані
+
+							</h3>
+							<p>
+								Тепер ваші друзі можуть перевірити свою позу за допомогою функції Попередній перегляд на зовнішньому екрані, аби всі виглядали якнайкраще з першої ж спроби.
+
+
+
+
+							</p>
+						</div>
+						<div class="default_item block-m">
+							<img
+								src="https://zhuk.ua/content/uploads/images/galaxy-z-fold3-523543423543g_highlights_pho.png"
+								alt="Galaxy Z Fold3 5G"
+							/>
+							<h3>Режим Портрет</h3>
+							<p>
+								Перетворюйте знімки на художні полотна. Коригуйте глибину
+								різкості та освітленність в один дотик за допомогою основної
+								камери.
+							</p>
+						</div>
+					
+
+
 					<section class="default-section block-prl block-m">
 						<p class="default-section__text">
 							Але дивовижні враження від перегляду не обмежуються екраном
@@ -804,7 +906,6 @@
 							прикрих несподіванок.
 						</p>
 					</section>
-
 					<figure class="full_img block-m">
 						<img
 							alt="Galaxy Z Fold3 5G"
